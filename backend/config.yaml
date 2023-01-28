@@ -1,0 +1,18 @@
+app:
+  name: "webApp"
+  mode: "dev"
+  port: "8080"
+
+mysql:
+  host: "127.0.0.1"
+  port: 3306
+  password: 000000
+  user: root
+  dbname: "corporeity"
+
+log:
+  level: "dev"
+  filename: "webApp.log"
+  max_size: 200
+  max_age: 30
+  max_backups: 7
