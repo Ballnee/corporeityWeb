@@ -11,5 +11,6 @@ func Setup() *gin.Engine {
 	r.Use(logger.GinLogger(), logger.GinRecovery(true))
 	v1 := r.Group("/api/v1")
 	v1.POST("/signup", controller.SignupHandler)
+	v1.POST("/login", controller.LoginHandler)
 	return r
 }

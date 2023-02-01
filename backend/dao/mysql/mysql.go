@@ -14,13 +14,13 @@ func Init() (err error) {
 		viper.GetString("mysql.user"), viper.GetString("mysql.password"), viper.GetString("mysql.host"),
 		viper.GetInt("mysql.port"), viper.GetString("mysql.dbname"))
 	// 也可以使用MustConnect连接不成功就panic
+	println(dsn)
 	db, err = sqlx.Connect("mysql", dsn)
 	if err != nil {
 		fmt.Printf("connect DB failed, err:%v\n", err)
 		return
 	}
-	db.SetMaxOpenConns(viper.GetInt("mysql.max_open_conns"))
-	db.SetMaxIdleConns(viper.GetInt("mysql.max_idle_conns"))
+
 	return
 }
 

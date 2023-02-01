@@ -1,9 +1,9 @@
 
--- 教师表 唯一id 所教班级id 姓名 密码
+-- 教师表 唯一id  姓名 密码
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
                         `id` bigint(20) NOT NULL AUTO_INCREMENT,
-                        'userId' bigint(20) not null,
+                        'user_id' bigint(20) not null,
                         `username` varchar(64) COLLATE utf8mb4_general_ci NOT NULL,
                         `password` varchar(64) COLLATE utf8mb4_general_ci NOT NULL,
                         PRIMARY KEY (`id`)

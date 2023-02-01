@@ -22,6 +22,7 @@ func Init(mode string) (err error) {
 	writeSyncer := getLogWriter(viper.GetString("log.filename"), viper.GetInt("log.max_size"), viper.GetInt("log.max_age"), viper.GetInt("log.max_backups"))
 	encoder := getEncoder()
 	var l = new(zapcore.Level)
+	println(viper.GetString("log.level"))
 	err = l.UnmarshalText([]byte(viper.GetString("log.level")))
 	if err != nil {
 		return

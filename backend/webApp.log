@@ -1,1 +1,51 @@
 {"level":"DEBUG","time":"2023-01-27T19:43:15.814-0800","caller":"backend/main.go:27","msg":"logger init success"}
+{"level":"DEBUG","time":"2023-01-27T19:46:49.185-0800","caller":"backend/main.go:27","msg":"logger init success"}
+{"level":"DEBUG","time":"2023-01-27T19:47:34.999-0800","caller":"backend/main.go:27","msg":"logger init success"}
+{"level":"ERROR","time":"2023-01-27T19:57:25.987-0800","caller":"controller/user.go:14","msg":"signup with invalid params"}
+{"level":"INFO","time":"2023-01-27T19:57:25.987-0800","caller":"logger/log.go:79","msg":"/api/v1/signup","status":200,"method":"POST","path":"/api/v1/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.000271684}
+{"level":"ERROR","time":"2023-01-27T20:00:20.706-0800","caller":"controller/user.go:14","msg":"signup with invalid params"}
+{"level":"INFO","time":"2023-01-27T20:00:20.706-0800","caller":"logger/log.go:79","msg":"/api/v1/signup","status":200,"method":"POST","path":"/api/v1/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.000164565}
+{"level":"DEBUG","time":"2023-01-27T20:01:30.511-0800","caller":"backend/main.go:27","msg":"logger init success"}
+{"level":"ERROR","time":"2023-01-27T20:01:53.250-0800","caller":"controller/user.go:16","msg":"signup with invalid params"}
+{"level":"INFO","time":"2023-01-27T20:01:53.250-0800","caller":"logger/log.go:79","msg":"/api/v1/signup","status":200,"method":"POST","path":"/api/v1/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.000187216}
+{"level":"ERROR","time":"2023-01-27T20:02:22.296-0800","caller":"controller/user.go:16","msg":"signup with invalid params"}
+{"level":"INFO","time":"2023-01-27T20:02:22.296-0800","caller":"logger/log.go:79","msg":"/api/v1/signup","status":200,"method":"POST","path":"/api/v1/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.005260007}
+{"level":"ERROR","time":"2023-01-27T20:04:21.290-0800","caller":"logic/user.go:14","msg":"mysql has err"}
+{"level":"INFO","time":"2023-01-27T20:04:21.290-0800","caller":"logger/log.go:79","msg":"/api/v1/signup","status":200,"method":"POST","path":"/api/v1/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.123426884}
+{"level":"ERROR","time":"2023-01-27T20:06:43.669-0800","caller":"logic/user.go:14","msg":"mysql has err"}
+{"level":"INFO","time":"2023-01-27T20:06:43.669-0800","caller":"logger/log.go:79","msg":"/api/v1/signup","status":200,"method":"POST","path":"/api/v1/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.000767382}
+{"level":"ERROR","time":"2023-01-27T20:08:01.147-0800","caller":"logic/user.go:14","msg":"mysql has err"}
+{"level":"INFO","time":"2023-01-27T20:08:01.147-0800","caller":"logger/log.go:79","msg":"/api/v1/signup","status":200,"method":"POST","path":"/api/v1/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.000471246}
+{"level":"DEBUG","time":"2023-01-27T20:08:23.490-0800","caller":"backend/main.go:27","msg":"logger init success"}
+{"level":"ERROR","time":"2023-01-27T20:08:26.850-0800","caller":"logic/user.go:16","msg":"mysql has err"}
+{"level":"INFO","time":"2023-01-27T20:08:26.850-0800","caller":"logger/log.go:79","msg":"/api/v1/signup","status":200,"method":"POST","path":"/api/v1/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.001574774}
+{"level":"DEBUG","time":"2023-02-01T00:37:27.903-0800","caller":"backend/main.go:27","msg":"logger init success"}
+{"level":"ERROR","time":"2023-02-01T00:37:40.489-0800","caller":"logic/user.go:17","msg":"mysql has err"}
+{"level":"INFO","time":"2023-02-01T00:37:40.489-0800","caller":"logger/log.go:79","msg":"/api/v1/signup","status":200,"method":"POST","path":"/api/v1/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.001992162}
+{"level":"ERROR","time":"2023-02-01T00:39:03.644-0800","caller":"logic/user.go:17","msg":"mysql has err"}
+{"level":"INFO","time":"2023-02-01T00:39:03.644-0800","caller":"logger/log.go:79","msg":"/api/v1/signup","status":200,"method":"POST","path":"/api/v1/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.000632215}
+{"level":"DEBUG","time":"2023-02-01T00:39:23.873-0800","caller":"backend/main.go:27","msg":"logger init success"}
+{"level":"ERROR","time":"2023-02-01T00:39:29.455-0800","caller":"logic/user.go:17","msg":"mysql has err"}
+{"level":"INFO","time":"2023-02-01T00:39:29.456-0800","caller":"logger/log.go:79","msg":"/api/v1/signup","status":200,"method":"POST","path":"/api/v1/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.001622015}
+{"level":"DEBUG","time":"2023-02-01T00:47:44.053-0800","caller":"backend/main.go:27","msg":"logger init success"}
+{"level":"INFO","time":"2023-02-01T00:47:50.776-0800","caller":"logger/log.go:79","msg":"/api/v1/signup","status":200,"method":"POST","path":"/api/v1/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.007356992}
+{"level":"DEBUG","time":"2023-02-01T01:46:01.108-0800","caller":"backend/main.go:27","msg":"logger init success"}
+{"level":"INFO","time":"2023-02-01T01:46:10.171-0800","caller":"logger/log.go:79","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.000003256}
+{"level":"DEBUG","time":"2023-02-01T01:47:24.633-0800","caller":"backend/main.go:27","msg":"logger init success"}
+{"level":"ERROR","time":"2023-02-01T01:47:29.739-0800","caller":"controller/user.go:42","msg":"login with invalid params"}
+{"level":"INFO","time":"2023-02-01T01:47:29.739-0800","caller":"logger/log.go:79","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.000187785}
+{"level":"ERROR","time":"2023-02-01T01:48:16.071-0800","caller":"controller/user.go:42","msg":"login with invalid params"}
+{"level":"INFO","time":"2023-02-01T01:48:16.072-0800","caller":"logger/log.go:79","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.00019863}
+{"level":"DEBUG","time":"2023-02-01T01:49:51.180-0800","caller":"backend/main.go:27","msg":"logger init success"}
+{"level":"INFO","time":"2023-02-01T01:49:55.355-0800","caller":"logger/log.go:79","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.001561681}
+{"level":"ERROR","time":"2023-02-01T01:51:31.273-0800","caller":"logic/user.go:44","msg":"login err"}
+{"level":"ERROR","time":"2023-02-01T01:51:31.273-0800","caller":"controller/user.go:51","msg":"login err"}
+{"level":"INFO","time":"2023-02-01T01:51:31.273-0800","caller":"logger/log.go:79","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.002169987}
+{"level":"DEBUG","time":"2023-02-01T01:56:00.942-0800","caller":"backend/main.go:27","msg":"logger init success"}
+{"level":"ERROR","time":"2023-02-01T01:56:04.829-0800","caller":"logic/user.go:44","msg":"login err"}
+{"level":"ERROR","time":"2023-02-01T01:56:04.829-0800","caller":"controller/user.go:52","msg":"login err"}
+{"level":"INFO","time":"2023-02-01T01:56:04.829-0800","caller":"logger/log.go:79","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.00131931}
+{"level":"DEBUG","time":"2023-02-01T01:58:51.554-0800","caller":"backend/main.go:27","msg":"logger init success"}
+{"level":"ERROR","time":"2023-02-01T01:58:55.235-0800","caller":"logic/user.go:44","msg":"login err"}
+{"level":"ERROR","time":"2023-02-01T01:58:55.235-0800","caller":"controller/user.go:52","msg":"login err"}
+{"level":"INFO","time":"2023-02-01T01:58:55.235-0800","caller":"logger/log.go:79","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.001925824}
