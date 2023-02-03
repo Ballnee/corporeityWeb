@@ -3,6 +3,7 @@ package logic
 import (
 	"corporeit/backend/dao/mysql"
 	"corporeit/backend/model"
+	"corporeit/backend/pkg/jwt"
 	"corporeit/backend/pkg/snowflake"
 	"errors"
 
@@ -34,7 +35,7 @@ func SignUp(p *model.ParamSignUp) (err error) {
 
 }
 
-func Login(p *model.ParamLoginIn) (err error) {
+func Login(p *model.ParamLoginIn) (token string, err error) {
 	//前端数据和数据库数据对比
 	user := &model.User{
 		Username: p.Username,
@@ -42,9 +43,8 @@ func Login(p *model.ParamLoginIn) (err error) {
 	}
 	if err := mysql.Login(user); err != nil {
 		zap.L().Error("login err")
-		return err
+		return "", err
 	}
-
-	return nil
+	return jwt.GenToken(user.UserId, user.Username)
 
 }

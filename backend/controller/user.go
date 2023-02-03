@@ -46,7 +46,7 @@ func LoginHandler(c *gin.Context) {
 		})
 		return
 	}
-	err := logic.Login(&p)
+	token, err := logic.Login(&p)
 
 	if err != nil {
 		zap.L().Error("login err")
@@ -56,7 +56,8 @@ func LoginHandler(c *gin.Context) {
 		return
 	}
 	c.JSON(http.StatusOK, gin.H{
-		"msg": "login success",
+		"msg":  "login success",
+		"data": token,
 	})
 	return
 

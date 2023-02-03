@@ -49,3 +49,13 @@
 {"level":"ERROR","time":"2023-02-01T01:58:55.235-0800","caller":"logic/user.go:44","msg":"login err"}
 {"level":"ERROR","time":"2023-02-01T01:58:55.235-0800","caller":"controller/user.go:52","msg":"login err"}
 {"level":"INFO","time":"2023-02-01T01:58:55.235-0800","caller":"logger/log.go:79","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.001925824}
+{"level":"DEBUG","time":"2023-02-03T01:39:31.469-0800","caller":"backend/main.go:27","msg":"logger init success"}
+{"level":"INFO","time":"2023-02-03T01:42:05.566-0800","caller":"logger/log.go:79","msg":"/api/v1login","status":404,"method":"POST","path":"/api/v1login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.000000736}
+{"level":"INFO","time":"2023-02-03T01:42:46.011-0800","caller":"logger/log.go:79","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.079052631}
+{"level":"DEBUG","time":"2023-02-03T01:44:51.167-0800","caller":"backend/main.go:27","msg":"logger init success"}
+{"level":"INFO","time":"2023-02-03T01:44:58.742-0800","caller":"logger/log.go:79","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.000199243}
+{"level":"DEBUG","time":"2023-02-03T01:46:44.980-0800","caller":"backend/main.go:27","msg":"logger init success"}
+{"level":"DEBUG","time":"2023-02-03T01:50:22.746-0800","caller":"backend/main.go:27","msg":"logger init success"}
+{"level":"INFO","time":"2023-02-03T01:50:26.553-0800","caller":"logger/log.go:79","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.00771915}
+{"level":"INFO","time":"2023-02-03T01:51:20.131-0800","caller":"logger/log.go:79","msg":"/api/v1/testToken","status":404,"method":"POST","path":"/api/v1/testToken","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.000000627}
+{"level":"INFO","time":"2023-02-03T01:51:45.314-0800","caller":"logger/log.go:79","msg":"/api/v1/testToken","status":200,"method":"GET","path":"/api/v1/testToken","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.000085993}
