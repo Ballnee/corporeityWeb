@@ -59,3 +59,8 @@
 {"level":"INFO","time":"2023-02-03T01:50:26.553-0800","caller":"logger/log.go:79","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.00771915}
 {"level":"INFO","time":"2023-02-03T01:51:20.131-0800","caller":"logger/log.go:79","msg":"/api/v1/testToken","status":404,"method":"POST","path":"/api/v1/testToken","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.000000627}
 {"level":"INFO","time":"2023-02-03T01:51:45.314-0800","caller":"logger/log.go:79","msg":"/api/v1/testToken","status":200,"method":"GET","path":"/api/v1/testToken","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.000085993}
+{"level":"DEBUG","time":"2023-02-03T21:32:50.356-0800","caller":"backend/main.go:27","msg":"logger init success"}
+{"level":"ERROR","time":"2023-02-03T21:33:34.559-0800","caller":"controller/user.go:43","msg":"login with invalid params"}
+{"level":"INFO","time":"2023-02-03T21:33:34.559-0800","caller":"logger/log.go:79","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.000293037}
+{"level":"DEBUG","time":"2023-02-03T21:39:50.575-0800","caller":"backend/main.go:27","msg":"logger init success"}
+{"level":"INFO","time":"2023-02-03T21:40:05.580-0800","caller":"logger/log.go:79","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.006480443}

@@ -41,24 +41,26 @@ func LoginHandler(c *gin.Context) {
 	fmt.Println(p.Username)
 	if err := c.ShouldBindJSON(&p); err != nil {
 		zap.L().Error("login with invalid params")
-		c.JSON(http.StatusOK, gin.H{
-			"msg": "login failed due to params",
-		})
+		//c.JSON(http.StatusOK, gin.H{
+		//	"msg": "login failed due to params",
+		//})
+		Response(c, "login failed due to params", "")
 		return
 	}
 	token, err := logic.Login(&p)
 
 	if err != nil {
 		zap.L().Error("login err")
-		c.JSON(http.StatusOK, gin.H{
-			"msg": "username or password has err",
-		})
+		//c.JSON(http.StatusOK, gin.H{
+		//	"msg": "username or password has err",
+		//})
+		Response(c, "username or password has err", "")
 		return
 	}
-	c.JSON(http.StatusOK, gin.H{
-		"msg":  "login success",
-		"data": token,
-	})
+	//c.JSON(http.StatusOK, gin.H{
+	//	"msg":  "login success",
+	//	"data": token,
+	//})
+	Response(c, "login success", token)
 	return
-
 }
