@@ -23,7 +23,7 @@ func JWTAuthMiddleware() func(c *gin.Context) {
 		// 按空格分割
 		parts := strings.SplitN(authHeader, " ", 2)
 		if !(len(parts) == 2 && parts[0] == "Bearer") {
-			controller.Response(c, "token invalid", "")
+			controller.Response(c, "Bearer invalid", "")
 			c.Abort()
 			return
 		}

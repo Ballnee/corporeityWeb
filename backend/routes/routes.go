@@ -15,10 +15,8 @@ func Setup() *gin.Engine {
 	v1.POST("/signup", controller.SignupHandler)
 	v1.POST("/login", controller.LoginHandler)
 	v1.Use(middlewares.JWTAuthMiddleware())
-	//v1.GET("/testToken", func(context *gin.Context) {
-	//	context.JSON(200, gin.H{
-	//		"msg": "Tokenvalid",
-	//	})
-	//})
+	{
+		v1.POST("/Student", controller.StudentAddHandler)
+	}
 	return r
 }
