@@ -26,15 +26,15 @@ CREATE TABLE `grades` (
                         `stuId` bigint(20) UNIQUE ,
                         `height` tinyint(4) NOT NULL,
                         `weight` tinyint(4) NOT NULL,
-                        `lungs`  INTEGER not null,
+                        `lungs`  int not null,
                         `50M` float not null, -- second 50m跑
                         `sittingForward`  tinyint(4) not null ,
                         `50M8` float , -- 50*8
                         `sit-upsPerMin` tinyint(4) not null,
-                        `skipsPerMin` INTEGER not null ,
-                        `standingLongJump` int not null ,
-                        `800M` int,
-                        `1000M` int,
+                        `skipsPerMin` int not null ,
+                        `standingLongJump` int not null , --cm
+                        `800M` float,
+                        `1000M` float,
                         `pullUp` tinyint(4),
                        PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;

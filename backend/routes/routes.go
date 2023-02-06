@@ -19,5 +19,9 @@ func Setup() *gin.Engine {
 		v1.POST("/student", controller.StudentAddHandler)
 		v1.GET("/student", controller.StudentGetAllHandler)
 	}
+
+	{
+		v1.POST("/grade", controller.GradeAddHandler)
+	}
 	return r
 }

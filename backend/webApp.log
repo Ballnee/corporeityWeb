@@ -150,3 +150,19 @@
 {"level":"ERROR","time":"2023-02-06T01:59:49.897-0800","caller":"controller/student.go:17","msg":"add student params invalid"}
 {"level":"INFO","time":"2023-02-06T01:59:49.897-0800","caller":"logger/log.go:79","msg":"/api/v1/student","status":200,"method":"POST","path":"/api/v1/student","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.006001527}
 {"level":"INFO","time":"2023-02-06T02:00:31.766-0800","caller":"logger/log.go:79","msg":"/api/v1/student","status":200,"method":"POST","path":"/api/v1/student","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.032952155}
+{"level":"DEBUG","time":"2023-02-06T04:38:11.519-0800","caller":"backend/main.go:27","msg":"logger init success"}
+{"level":"INFO","time":"2023-02-06T04:38:38.616-0800","caller":"logger/log.go:79","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.220002014}
+{"level":"INFO","time":"2023-02-06T04:47:03.909-0800","caller":"logger/log.go:79","msg":"/api/v1/grade","status":200,"method":"POST","path":"/api/v1/grade","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.000034478}
+{"level":"ERROR","time":"2023-02-06T04:47:32.617-0800","caller":"mysql/grade.go:14","msg":"mysql GradeAdd err"}
+{"level":"ERROR","time":"2023-02-06T04:47:32.617-0800","caller":"controller/grade.go:23","msg":"grade add database err"}
+{"level":"INFO","time":"2023-02-06T04:47:32.617-0800","caller":"logger/log.go:79","msg":"/api/v1/grade","status":200,"method":"POST","path":"/api/v1/grade","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.001293101}
+{"level":"DEBUG","time":"2023-02-06T04:50:45.153-0800","caller":"backend/main.go:27","msg":"logger init success"}
+{"level":"ERROR","time":"2023-02-06T04:50:55.171-0800","caller":"mysql/grade.go:14","msg":"mysql GradeAdd err"}
+{"level":"ERROR","time":"2023-02-06T04:50:55.175-0800","caller":"controller/grade.go:23","msg":"grade add database err"}
+{"level":"INFO","time":"2023-02-06T04:50:55.175-0800","caller":"logger/log.go:79","msg":"/api/v1/grade","status":200,"method":"POST","path":"/api/v1/grade","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.005288695}
+{"level":"DEBUG","time":"2023-02-06T04:52:15.431-0800","caller":"backend/main.go:27","msg":"logger init success"}
+{"level":"ERROR","time":"2023-02-06T04:52:21.090-0800","caller":"mysql/grade.go:14","msg":"mysql GradeAdd err"}
+{"level":"ERROR","time":"2023-02-06T04:52:21.090-0800","caller":"controller/grade.go:23","msg":"grade add database err"}
+{"level":"INFO","time":"2023-02-06T04:52:21.090-0800","caller":"logger/log.go:79","msg":"/api/v1/grade","status":200,"method":"POST","path":"/api/v1/grade","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.004549773}
+{"level":"DEBUG","time":"2023-02-06T04:54:41.879-0800","caller":"backend/main.go:27","msg":"logger init success"}
+{"level":"INFO","time":"2023-02-06T04:54:46.702-0800","caller":"logger/log.go:79","msg":"/api/v1/grade","status":200,"method":"POST","path":"/api/v1/grade","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.29.2","errors":"","cost":0.004516859}
