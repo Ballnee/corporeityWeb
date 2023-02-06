@@ -32,6 +32,17 @@ func StudentAddHandler(c *gin.Context) {
 	return
 }
 
+func StudentGetAllHandler(c *gin.Context) {
+	students, err := logic.QueryAll()
+	if err != nil {
+		Response(c, "query all err", "")
+		return
+	}
+
+	Response(c, "query all success", students)
+	return
+}
+
 func GetCurrentUserId(c *gin.Context) (userId uint64, err error) {
 	uid, ok := c.Get("userId")
 	if !ok {

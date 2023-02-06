@@ -18,3 +18,7 @@ func AddStudent(p *model.ParamAddStu, userId uint64) error {
 	fmt.Println(student)
 	return mysql.AddStudent(student)
 }
+
+func QueryAll() ([]model.Student, error) {
+	return mysql.QueryAll()
+}

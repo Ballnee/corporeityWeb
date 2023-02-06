@@ -16,7 +16,8 @@ func Setup() *gin.Engine {
 	v1.POST("/login", controller.LoginHandler)
 	v1.Use(middlewares.JWTAuthMiddleware())
 	{
-		v1.POST("/Student", controller.StudentAddHandler)
+		v1.POST("/student", controller.StudentAddHandler)
+		v1.GET("/student", controller.StudentGetAllHandler)
 	}
 	return r
 }
