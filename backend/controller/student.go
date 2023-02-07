@@ -33,7 +33,7 @@ func StudentAddHandler(c *gin.Context) {
 }
 
 func StudentGetAllHandler(c *gin.Context) {
-	students, err := logic.QueryAll()
+	students, err := logic.QueryAllStudent()
 	if err != nil {
 		Response(c, "query all err", "")
 		return

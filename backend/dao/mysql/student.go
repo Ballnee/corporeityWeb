@@ -16,7 +16,7 @@ func AddStudent(student *model.Student) error {
 	return err
 }
 
-func QueryAll() ([]model.Student, error) {
+func QueryAllStudent() ([]model.Student, error) {
 	sqlStr := `select stuId,class_id,stuName,gender,birthday,user_id from stu`
 	var students []model.Student
 	err := db.Select(&students, sqlStr)

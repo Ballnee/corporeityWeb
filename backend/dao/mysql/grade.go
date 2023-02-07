@@ -17,3 +17,15 @@ func GradeAdd(grade *model.Grade) error {
 	}
 	return err
 }
+
+func QueryAllGrade() (err error, grades []model.Grade) {
+	sqlStr := `select stuId,height,weight,lungs,50M,sittingForward,50M8,sitUpsPerMin,skipsPerMin,standingLongJump,800M,1000M,pullUp from grades`
+	err = db.Select(&grades, sqlStr)
+	if err != nil {
+		fmt.Println(grades)
+		fmt.Println(err)
+		zap.L().Error("QueryAllGrade databases err")
+		return
+	}
+	return
+}

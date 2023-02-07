@@ -22,6 +22,7 @@ func Setup() *gin.Engine {
 
 	{
 		v1.POST("/grade", controller.GradeAddHandler)
+		v1.GET("/grade", controller.GradeGetHandler)
 	}
 	return r
 }

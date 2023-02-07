@@ -26,3 +26,15 @@ func GradeAddHandler(c *gin.Context) {
 	Response(c, "grade add success", "")
 	return
 }
+
+func GradeGetHandler(c *gin.Context) {
+	err, grades := logic.QueryAllGrade()
+	if err != nil {
+		zap.L().Error("GradeGetHandler err")
+		Response(c, "query all grades failed", "")
+		return
+	}
+	Response(c, "query all grades success", grades)
+	return
+
+}

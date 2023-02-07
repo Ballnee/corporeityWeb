@@ -23,3 +23,8 @@ func GradeAdd(g *model.ParamAddGrade) error {
 	}
 	return mysql.GradeAdd(grade)
 }
+
+func QueryAllGrade() (err error, grades []model.Grade) {
+	err, grades = mysql.QueryAllGrade()
+	return
+}
