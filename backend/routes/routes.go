@@ -11,7 +11,7 @@ func Setup() *gin.Engine {
 	r := gin.New()
 	r.Use(logger.GinLogger(), logger.GinRecovery(true))
 	v1 := r.Group("/api/v1")
-
+	v1.Use(middlewares.Cors())
 	v1.POST("/signup", controller.SignupHandler)
 	v1.POST("/login", controller.LoginHandler)
 	v1.Use(middlewares.JWTAuthMiddleware())
