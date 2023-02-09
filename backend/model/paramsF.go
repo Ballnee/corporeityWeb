@@ -15,6 +15,11 @@ type ParamLoginIn struct {
 	Password string `json:"password" binding:"required"`
 }
 
+//param get class
+type ParamGetClassById struct {
+	ClassId uint16 `json:"classId" binding:"required"`
+}
+
 // ParamAddStu gender 1 for famale 2 for male
 type ParamAddStu struct {
 	StudentId   uint32    `json:"studentId" binding:"required"`

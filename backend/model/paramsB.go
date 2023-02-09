@@ -14,7 +14,7 @@ type Student struct {
 	StudentName string    `db:"stuName"`
 	Gender      uint8     `db:"gender"`
 	Birthday    time.Time `db:"birthday"`
-	UserId      uint64    `db:"user_id"`
+	UserId      uint64    `db:"user_id"` //相当于体育老师的id
 }
 
 type Grade struct {
@@ -31,4 +31,23 @@ type Grade struct {
 	PullUp           uint8   `db:"pullUp"`
 	StandingLongJump uint16  `db:"standingLongJump"`
 	Skips            uint16  `db:"skipsPerMin"`
+}
+
+type Class struct {
+	StudentName      string    `db:"stuName"`
+	Gender           uint8     `db:"gender"`
+	Birthday         time.Time `db:"birthday"`
+	StudentId        uint32    `db:"stuId"`
+	Height           uint8     `db:"height"`
+	Weight           uint8     `db:"weight"`
+	Lungs            uint16    `db:"lungs"`
+	M50              float32   `db:"50M"`
+	SittingForward   uint8     `db:"sittingForward"`
+	SitUps           uint8     `db:"sitUpsPerMin"`
+	M50_8            float32   `db:"50M8"`
+	M800             float32   `db:"800M"`
+	M1000            float32   `db:"1000M"`
+	PullUp           uint8     `db:"pullUp"`
+	StandingLongJump uint16    `db:"standingLongJump"`
+	Skips            uint16    `db:"skipsPerMin"`
 }
