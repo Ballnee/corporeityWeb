@@ -72,11 +72,6 @@ export default defineComponent({
                 }
             });
         };
-        
-       
-        
-            
-
         const resetForm = ()=>{
             data.ruleForm.username = "";
             data.ruleForm.password = "";
