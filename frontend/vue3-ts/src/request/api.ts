@@ -10,3 +10,12 @@ export function login(data:loginData){
         data
     })
 }
+
+//学生列表接口
+export function getStudent(){
+    return service({
+        url:"/student",
+        method:"get",
+        
+    })
+}

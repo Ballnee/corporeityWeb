@@ -15,7 +15,6 @@
             <el-button  class="loginBt" @click="resetForm">重置</el-button>
         </el-form-item>
     </el-form>
-    <p>{{ ruleForm.username }}</p>
     </div>
 </template>
 
@@ -24,10 +23,12 @@
 import { defineComponent,reactive,toRefs,ref } from 'vue'
 import {LoginData} from "../type/login"
 import type { FormInstance } from 'element-plus';
+import { useRouter } from 'vue-router';
 import { login } from '@/request/api';
 export default defineComponent({
     setup () {
         const data=reactive(new LoginData());
+        const router = useRouter();
         const rules = {
                 username: [
                     {
@@ -62,9 +63,10 @@ export default defineComponent({
             formEl.validate((valid)=>{
                 if(valid) {
                     console.log("submit!")
-                    
                     login(data.ruleForm).then((res)=>{
-                        console.log(res)
+                        // console.log(res)
+                        localStorage.setItem('token',res.Data)
+                        router.push("/")
                     })
                 }else{
                     console.log("err submit!")
