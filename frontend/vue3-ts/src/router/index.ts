@@ -7,7 +7,27 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: HomeView,
+      children:[
+        {
+          path:"class",
+          name:"class",
+          meta:{
+            isShow:true,
+            title:"班级列表"
+          },
+          component:() => import('../views/ClassView.vue')
+        },
+        {
+          path:"student",
+          name:"student",
+          meta:{
+            isShow:true,
+            title:"学生列表",
+          },
+          component:() => import('../views/StudentView.vue')
+        }
+      ]
     },
     {
       path: '/about',

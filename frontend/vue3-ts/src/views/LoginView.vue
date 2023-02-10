@@ -7,12 +7,12 @@
         </el-form-item>
    
         <el-form-item label="密码:" prop="password" class="item" >
-            <el-input  v-model="ruleForm.password" placeholder="Please input your password" ></el-input>
+            <el-input  v-model="ruleForm.password" placeholder="Please input your password" show-password ></el-input>
         </el-form-item>
         
         <el-form-item>
             <el-button class="loginBt"  type="primary" @click="submitForm(ruleFormRef)">提交</el-button>
-            <el-button  class="loginBt" @click="resetForm('ruleForm')">重置</el-button>
+            <el-button  class="loginBt" @click="resetForm">重置</el-button>
         </el-form-item>
     </el-form>
     <p>{{ ruleForm.username }}</p>
@@ -79,7 +79,7 @@ export default defineComponent({
         }
          
         return {
-            ...toRefs(data),submitForm,rules,ruleFormRef
+            ...toRefs(data),submitForm,rules,ruleFormRef,resetForm
         }
     }
     
