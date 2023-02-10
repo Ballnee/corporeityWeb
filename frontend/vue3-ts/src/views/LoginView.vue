@@ -76,6 +76,13 @@ export default defineComponent({
        
         
             
+
+        const resetForm = ()=>{
+            data.ruleForm.username = "";
+            data.ruleForm.password = "";
+            return;
+        }
+         
         return {
             ...toRefs(data),submitForm,rules,ruleFormRef
         }
