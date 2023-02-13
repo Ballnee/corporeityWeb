@@ -39,8 +39,7 @@ export default defineComponent({
             
             data.list = res.Data
             for (let index = 0; index < res.Data.length;index++) {
-                data.list[index].StudentId = res.Data[index].StudentId;
-                data.list[index].StudentName = res.Data[index].StudentName;
+                
                 data.list[index].Gender = res.Data[index].Gender > 0 ?"男":"女";
                 data.list[index].Birthday = res.Data[index].Birthday.substr(0,10);
                 data.list[index].Year = Math.floor((2023 - res.Data[index].StudentId/100000));
