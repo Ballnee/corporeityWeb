@@ -60,7 +60,7 @@ export default defineComponent({
         const submitForm = (formEl:FormInstance | undefined)=>{
             if (!formEl) return;
             // 对表单的内容进行验证
-            formEl.validate((valid)=>{
+            formEl.validate((valid:boolean)=>{
                 if(valid) {
                     console.log("submit!")
                     login(data.ruleForm).then((res)=>{

@@ -18,7 +18,7 @@ export class InitStu{
     selectData:selectDataInt={
         stuId:201764712,
         page:1,
-        count:0,
+        count:0, //初始总页数
         pageSize:10
     }
     list:ListInitStudent[] = []
