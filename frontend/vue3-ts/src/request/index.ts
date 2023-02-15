@@ -13,17 +13,19 @@ const service = axios.create({
 service.interceptors.request.use((config)=>{
     config.headers=config.headers || {}
     if(localStorage.getItem('token')){
-        config.headers.token = localStorage.getItem('token') || ""
+        const token_type = "Bearer"
+        config.headers.Authorization = token_type+ ' ' + localStorage.getItem('token')    
     }
     return config
 })
 
 // 响应拦截
 service.interceptors.response.use((res)=>{
-    const code:number = res.data.code
-    if (code != 200) {
-        return Promise.reject(res.data)
-    }
+    // const code:String = res.data.Msg
+    // if (code != "login success" || code != "query all success") {
+    //     console.log("++++++++++")
+    //     return Promise.reject(res.data)
+    // }
     return res.data
 },(err)=>{console.log(err)})
 

@@ -7,7 +7,27 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: HomeView,
+      children:[
+        {
+          path:"class",
+          name:"class",
+          meta:{
+            isShow:true,
+            title:"班级列表"
+          },
+          component:() => import('../views/ClassView.vue')
+        },
+        {
+          path:"student",
+          name:"student",
+          meta:{
+            isShow:true,
+            title:"学生列表",
+          },
+          component:() => import('../views/StudentView.vue')
+        }
+      ]
     },
     {
       path: '/about',
@@ -24,6 +44,14 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/LoginView.vue')
+    },
+    {
+      path: '/signup',
+      name: 'signup',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/SignupView.vue')
     }
   ]
 })

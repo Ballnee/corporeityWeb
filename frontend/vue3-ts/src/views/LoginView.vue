@@ -7,15 +7,14 @@
         </el-form-item>
    
         <el-form-item label="密码:" prop="password" class="item" >
-            <el-input  v-model="ruleForm.password" placeholder="Please input your password" ></el-input>
+            <el-input  v-model="ruleForm.password" placeholder="Please input your password" show-password ></el-input>
         </el-form-item>
         
         <el-form-item>
             <el-button class="loginBt"  type="primary" @click="submitForm(ruleFormRef)">提交</el-button>
-            <el-button  class="loginBt" @click="resetForm('ruleForm')">重置</el-button>
+            <el-button  class="loginBt" @click="resetForm">重置</el-button>
         </el-form-item>
     </el-form>
-    <p>{{ ruleForm.username }}</p>
     </div>
 </template>
 
@@ -24,10 +23,12 @@
 import { defineComponent,reactive,toRefs,ref } from 'vue'
 import {LoginData} from "../type/login"
 import type { FormInstance } from 'element-plus';
+import { useRouter } from 'vue-router';
 import { login } from '@/request/api';
 export default defineComponent({
     setup () {
         const data=reactive(new LoginData());
+        const router = useRouter();
         const rules = {
                 username: [
                     {
@@ -59,12 +60,13 @@ export default defineComponent({
         const submitForm = (formEl:FormInstance | undefined)=>{
             if (!formEl) return;
             // 对表单的内容进行验证
-            formEl.validate((valid)=>{
+            formEl.validate((valid:boolean)=>{
                 if(valid) {
                     console.log("submit!")
-                    
                     login(data.ruleForm).then((res)=>{
-                        console.log(res)
+                        // console.log(res)
+                        localStorage.setItem('token',res.Data)
+                        router.push("/")
                     })
                 }else{
                     console.log("err submit!")
@@ -72,12 +74,14 @@ export default defineComponent({
                 }
             });
         };
-        
-       
-        
-            
+        const resetForm = ()=>{
+            data.ruleForm.username = "";
+            data.ruleForm.password = "";
+            return;
+        }
+         
         return {
-            ...toRefs(data),submitForm,rules,ruleFormRef
+            ...toRefs(data),submitForm,rules,ruleFormRef,resetForm
         }
     }
     
