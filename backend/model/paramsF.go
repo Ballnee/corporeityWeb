@@ -37,7 +37,7 @@ type ParamAddGrade struct {
 	M50              float32 `json:"m_50" binding:"required"`
 	SittingForward   uint8   `json:"sittingForward" binding:"required"`
 	SitUps           uint8   `json:"sitUps" binding:"required"`
-	M50_8            float32 `json:"m50_8" binding:"required"`
+	M50_8            float32 `json:"m50_8"`
 	M800             float32 `json:"m800"`
 	M1000            float32 `json:"m1000"`
 	PullUp           uint8   `json:"pullUp"`
