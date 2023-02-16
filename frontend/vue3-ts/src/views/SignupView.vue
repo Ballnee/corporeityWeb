@@ -73,7 +73,7 @@ export default defineComponent({
                     console.log("submit!")
                     signup(form.ruleForm).then(()=>{
                         // console.log(res)
-                        
+                        alert("注册成功,请登陆")
                         router.push("/login")
                     })
                 }else{

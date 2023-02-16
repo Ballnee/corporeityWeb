@@ -69,10 +69,10 @@ export default defineComponent({
         });
         const onSubmit=()=>{
             let arr:ListInitStudent[] = []
-            if(data.selectData.stuId)
+            
         }
         return {
-            ...toRefs(data),currentChange,sizeChange
+            ...toRefs(data),currentChange,sizeChange,onSubmit
         }
     }
 })
