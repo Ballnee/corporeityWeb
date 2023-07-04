@@ -10,8 +10,8 @@ import (
 func Init() (err error) {
 	viper.SetConfigName("config")
 	viper.SetConfigType("yaml")
-	viper.AddConfigPath("./backend/") // 还可以在工作目录中查找配置
-	err = viper.ReadInConfig()        // read config
+	viper.AddConfigPath("./")  // 还可以在工作目录中查找配置
+	err = viper.ReadInConfig() // read config
 	if err != nil {
 		fmt.Printf("settings viper.ReadInConfig() failed,err:%v\n", err)
 	}
