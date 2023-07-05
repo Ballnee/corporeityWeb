@@ -30,7 +30,7 @@ func Setup() *gin.Engine {
 		v1.POST("/class", controller.ClassAnalysisHandler)
 	}
 	{
-
+		v1.POST("/upload", controller.UploadHandler)
 	}
 	return r
 }
