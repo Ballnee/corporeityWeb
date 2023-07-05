@@ -38,4 +38,4 @@ CREATE TABLE `grades` (
                           `1000M` float,
                           `pullUp` tinyint(4),
                           PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEgit FAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
