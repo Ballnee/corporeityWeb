@@ -11,6 +11,7 @@ import (
 func GradeAddHandler(c *gin.Context) {
 	grade := &model.ParamAddGrade{}
 	if err := c.ShouldBindJSON(grade); err != nil {
+		fmt.Println("upload grades", err)
 		zap.L().Error("grade add param err")
 		Response(c, "grade add param err", "")
 		return

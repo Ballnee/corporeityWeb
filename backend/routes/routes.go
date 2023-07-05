@@ -27,6 +27,10 @@ func Setup() *gin.Engine {
 
 	{
 		v1.GET("/class", controller.ClassGetByIdHandler)
+		v1.POST("/class", controller.ClassAnalysisHandler)
+	}
+	{
+
 	}
 	return r
 }
